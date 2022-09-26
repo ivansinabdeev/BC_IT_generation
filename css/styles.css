@@ -1,6 +1,6 @@
 /* ----------------------BENEFITS ---------------------- */
-.benefits {
-}
+.benefits {}
+
 .benefits-list {
   list-style: none;
   padding: 0;
@@ -8,11 +8,14 @@
   display: flex;
   gap: 70px;
 }
+
 .benefits-item {
   width: 362px;
   text-align: center;
 }
-.benefits-title {
-}
-.benefits-text {
-}
+
+.benefits-title {}
+
+.benefits-text {}
+
+/* comment for testing */
