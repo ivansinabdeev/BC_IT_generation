@@ -371,15 +371,27 @@ img {
   margin: 0 auto;
   width: 64px;
   height: 64px;
+  color: #fff;
+  transition-property: color, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: var(--acent-color);
+  cursor: pointer;
+}
+
+.works-item-icon:hover,
+.works-item-icon:focus {
+  opacity: 0.5;
+  color: #000;
 }
 
 .works-icon {
   width: 34px;
   height: 34px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
+
 .works-item-title {
   font-weight: 400;
   font-size: 18px;
