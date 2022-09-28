@@ -769,8 +769,14 @@ img {
   padding-bottom: 30px;
 }
 .callback-form-input {
-  border: none;
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
   margin-bottom: 35px;
+  outline: none;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .callback-form-input::placeholder {
   font-weight: 400;
@@ -781,6 +787,11 @@ img {
   align-items: center;
   color: var(--input-text-color);
 }
+
+.callback-form-input:focus {
+  border-color: var(--acent-color);
+}
+
 @media screen and (min-width: 767px) {
   .callback-container {
     display: flex;
