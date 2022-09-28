@@ -785,8 +785,11 @@ img {
   padding-left: 5px;
   display: flex;
   align-items: center;
-  color: var(--input-text-color);
-}
+  
+  
+
+
+  
 
 .callback-form-input:focus {
   border-color: var(--acent-color);
