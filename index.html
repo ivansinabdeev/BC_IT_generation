@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -132,7 +133,11 @@
       </section>
       <section class="solutions" id="solutions">
         <div class="solutions-container">
-          <div class="solutions-img-wrapper">
+          
+
+          <div class="solutions-img-wrapper" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <picture>
               <source
                 srcset="./image/home/people.webp 1x, ./image/home/people@2x.webp 2x"
@@ -884,5 +889,9 @@
     </main>
     <div class="overlay js-overlay-modal"></div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
